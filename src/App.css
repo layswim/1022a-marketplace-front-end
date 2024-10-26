@@ -1,127 +1,87 @@
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f7f3f9; /* Fundo suave em tom claro de rosa */
-  margin: 0;
-  padding: 20px;
+  font-family: 'Arial', sans-serif; /* Define a fonte para Arial */
+  background-color: #ffe0ec; /* Fundo suave em tom claro de rosa */
+  margin: 0; /* Remove margens do body */
+  padding: 20px; /* Adiciona padding ao body */
 }
 
 h1 {
-  text-align: center;
+  text-align: center; /* Centraliza o título */
   color: #d81b60; /* Cor do título em rosa */
-  margin-bottom: 30px;
-  font-size: 2.5em;
+  margin-bottom: 30px; /* Margem inferior do título */
+  font-size: 2.5em; /* Tamanho da fonte do título */
 }
 
 /* Contêineres dos produtos e usuários */
 .produtos-container,
 .usuarios-container {
-  display: flex;
+  display: flex; /* Utiliza flexbox para disposição */
   justify-content: center; /* Centraliza os itens */
-  margin-top: 20px;
+  margin-top: 20px; /* Margem superior */
+  border: 1px solid #d81b60; /* Borda rosa */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 15px; /* Espaço interno */
+  background: white; /* Fundo branco para os contêineres */
+  width: 80%; /* Largura dos contêineres */
+  text-align: center; /* Centraliza o texto dentro dos contêineres */
 }
 
 /* Estilo dos itens de produtos e usuários */
 .produto-item,
 .usuario-item {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 15px;
-  width: 250px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  background: white; /* Fundo branco para os itens */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para os itens */
+  padding: 20px; /* Espaço interno dos itens */
+  margin: 15px; /* Margem entre os itens */
+  width: 250px; /* Largura dos itens */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para hover */
 }
 
 .produto-item:hover,
 .usuario-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Eleva o item ao passar o mouse */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
 }
 
 .container-imagem img {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
+  width: 100%; /* Largura total da imagem */
+  border-radius: 10px; /* Bordas arredondadas para a imagem */
+  object-fit: cover; /* Cobre a área disponível sem distorção */
 }
 
 .produto-item h1,
 .usuario-item h1 {
-  font-size: 1.5em;
-  color: #d81b60; /* Título em rosa */
-  margin: 10px 0;
+  font-size: 1.5em; /* Tamanho do título dos itens */
+  color: #d81b60; /* Cor do título em rosa */
+  margin: 10px 0; /* Margem vertical do título */
   text-align: center; /* Centraliza os títulos */
 }
 
 .produto-item p,
 .usuario-item p {
-  margin: 5px 0;
-  color: #666;
-  line-height: 1.5;
+  margin: 5px 0; /* Margem vertical dos parágrafos */
+  color: #666; /* Cor do texto */
+  line-height: 1.5; /* Altura da linha */
 }
 
 /* Estilo para o preço */
 .produto-item p:nth-of-type(1) {
-  font-weight: bold;
-  color: #d81b60; /* Preço em rosa */
-  font-size: 1.2em;
+  font-weight: bold; /* Deixa o preço em negrito */
+  color: #d81b60; /* Cor do preço em rosa */
+  font-size: 1.2em; /* Tamanho da fonte do preço */
 }
 
 /* Estilos adicionais para usuários */
 .usuario-item {
-  border: 1px solid #d81b60; /* Borda rosa */
-  padding: 15px;
+  padding: 15px; /* Espaço interno dos itens de usuários */
 }
 
 .usuario-item p {
-  font-size: 0.95em;
+  font-size: 0.95em; /* Tamanho da fonte dos parágrafos de usuários */
 }
 
-/* Botões de Ação */
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  background-color: #d81b60; /* Botão rosa */
-  color: white;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.btn:hover {
-  background-color: #c2185b; /* Cor do botão ao passar o mouse */
-  transform: translateY(-2px);
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #eaeaea;
-  margin: 0;
-  padding: 20px;
-}
-
-.app-title {
-  text-align: center; /* Centraliza o título principal */
-  color: #d81b60; /* Cor rosa */
-  margin: 20px 0; /* Espaço acima e abaixo do título */
-  font-size: 2.5em; /* Tamanho do texto do título */
-  font-weight: bold; /* Deixa o texto em negrito */
-}
-
-.main-container {
-  display: flex; /* Utiliza flexbox para disposição */
-  justify-content: space-around; /* Espaço entre os contêineres */
-  margin-top: 20px; /* Espaço acima do contêiner principal */
-}
-
-.produtos-container,
-.usuarios-container {
-  width: 45%; /* Largura dos contêineres */
-  text-align: center; /* Centraliza o texto dentro dos contêineres */
-}
-
+/* Títulos "usuários" e "produtos" */
 .section-header {
   text-align: center; /* Centraliza os cabeçalhos das seções */
   color: #d81b60; /* Cor dos cabeçalhos em rosa */
@@ -130,25 +90,21 @@ body {
   font-weight: bold; /* Deixa o texto em negrito */
 }
 
-.produto-item,
+/* Contêiner principal */
+.main-container {
+  display: flex; /* Utiliza flexbox para disposição */
+  flex-direction: column; /* Alinha os contêineres em coluna */
+  align-items: center; /* Centraliza os contêineres */
+  margin-top: 20px; /* Espaço acima do contêiner principal */
+}
+
+/* Estilos adicionais para usuários */
 .usuario-item {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 15px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #d81b60; /* Borda rosa */
+  padding: 15px; /* Espaço interno dos itens de usuários */
 }
 
-.produto-item:hover,
-.usuario-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+.produto-item {
+  border: 1px solid #d81b60; /* Borda rosa */
+  padding: 15px; /* Espaço interno dos itens de produtos */
 }
-
-.container-imagem img {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
