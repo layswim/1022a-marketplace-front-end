@@ -1,61 +1,154 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f3f9; /* Fundo suave em tom claro de rosa */
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
   text-align: center;
+  color: #d81b60; /* Cor do título em rosa */
+  margin-bottom: 30px;
+  font-size: 2.5em;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-.usuarios-container{
+/* Contêineres dos produtos e usuários */
+.produtos-container,
+.usuarios-container {
   display: flex;
-  gap: 20px;
+  justify-content: center; /* Centraliza os itens */
+  margin-top: 20px;
 }
-.usuario-item{
-  width: 300px;
-  border: 1px solid #f0f0f0;
-  padding: 15px;
-  box-sizing: border-box;
-  box-shadow: 0px 0px 5px  5px rgb(212, 209, 209);
+
+/* Estilo dos itens de produtos e usuários */
+.produto-item,
+.usuario-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.container-imagem{
-  height: 300px;
-  overflow: hidden;
+
+.produto-item:hover,
+.usuario-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
-.usuario-item>.container-imagem>img{
+
+.container-imagem img {
   width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
 }
+
+.produto-item h1,
+.usuario-item h1 {
+  font-size: 1.5em;
+  color: #d81b60; /* Título em rosa */
+  margin: 10px 0;
+  text-align: center; /* Centraliza os títulos */
+}
+
+.produto-item p,
+.usuario-item p {
+  margin: 5px 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Estilo para o preço */
+.produto-item p:nth-of-type(1) {
+  font-weight: bold;
+  color: #d81b60; /* Preço em rosa */
+  font-size: 1.2em;
+}
+
+/* Estilos adicionais para usuários */
+.usuario-item {
+  border: 1px solid #d81b60; /* Borda rosa */
+  padding: 15px;
+}
+
+.usuario-item p {
+  font-size: 0.95em;
+}
+
+/* Botões de Ação */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d81b60; /* Botão rosa */
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #c2185b; /* Cor do botão ao passar o mouse */
+  transform: translateY(-2px);
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #eaeaea;
+  margin: 0;
+  padding: 20px;
+}
+
+.app-title {
+  text-align: center; /* Centraliza o título principal */
+  color: #d81b60; /* Cor rosa */
+  margin: 20px 0; /* Espaço acima e abaixo do título */
+  font-size: 2.5em; /* Tamanho do texto do título */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.main-container {
+  display: flex; /* Utiliza flexbox para disposição */
+  justify-content: space-around; /* Espaço entre os contêineres */
+  margin-top: 20px; /* Espaço acima do contêiner principal */
+}
+
+.produtos-container,
+.usuarios-container {
+  width: 45%; /* Largura dos contêineres */
+  text-align: center; /* Centraliza o texto dentro dos contêineres */
+}
+
+.section-header {
+  text-align: center; /* Centraliza os cabeçalhos das seções */
+  color: #d81b60; /* Cor dos cabeçalhos em rosa */
+  margin-bottom: 20px; /* Espaço abaixo do cabeçalho */
+  font-size: 2em; /* Tamanho do texto do cabeçalho */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.produto-item,
+.usuario-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto-item:hover,
+.usuario-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container-imagem img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
